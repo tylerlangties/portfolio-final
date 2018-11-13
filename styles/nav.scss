@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+.nav-wrapper {
+    width: 100vw;
+    height: 96px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.navigation {
+    font-family: 'Pathway Gothic One', sans-serif;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 2;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    position: fixed;
+    color: white;
+    &__icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        color: white;
+        padding: 1rem;
+        background: rgba(9, 3, 23, 0.98);
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        transition: all ease-in-out 500ms;
+        transform: translateY(-500px);
+        padding: 0;
+        opacity: 0;
+        background: rgba(9,3,23,0.98);
+        &--item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            position: relative;
+            opacity: 0;
+            flex-direction: row;
+            transition: all ease 200ms;
+            margin: 1rem 0;
+            width: 60px;
+            max-height: 20vh;
+            p {
+                position: absolute;
+                opacity: 0;
+                font-size: 1.5rem;
+                margin: 0;
+                padding: 0;
+                transform: translateX(-50px);
+                background-color: rgba(9,3,23,0.98);
+                transition: all ease 300ms;
+                width: 60px;
+                z-index: 100;
+                justify-self: center;
+                text-align: center;
+                padding: 1rem;
+            }
+            &:hover {
+                cursor: pointer;
+                p {
+                    transform: translateX(-5rem);
+                    opacity: 1;
+                    transition: all ease-in-out 250ms;
+                    width: 60px;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.home-icon, .profile-icon, .work-icon, .mail-icon {
+    height: 30px;
+    width: 30px;
+    color: white;
+    transition: opacity ease-in-out 300ms;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.open {
+    transform: translateY(0px);
+    opacity: 1;
+    .navigation__list--item {
+        opacity: 1;
+        transition: opacity 350ms ease 350ms;
+    }
+}

@@ -1,0 +1,36 @@
+.work-page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    padding: 100px 20px 0;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.img-container {
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+
+
+.proj-1, .proj-2, .proj-3, .proj-4 {
+        object-fit: cover;
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 5px;
+        transition: transform ease 400ms;
+        &:hover {
+            cursor: pointer;
+            transform: skewX(.75deg) scale(1.025);
+        }
+        @media (max-width: 956px) {
+            height: 300px;
+            width: 300px;
+        }
+        
+}
