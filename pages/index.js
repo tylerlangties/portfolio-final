@@ -9,8 +9,8 @@ const Index = () => (
                 <div className="container">
                 <h1 className="landing-page__title">Tyler Langties,<br/>Front-end / UI Developer</h1>
                 <p className="landing-page__subtitle">Hi. I produce elegant, performant, and accessible digital experiences. Currently working as a freelancer, US.</p>
-                <a href="/work"><button className="button-primary">Work</button></a>
-                <a href="/about"><button className="button-primary">Profile</button></a>
+                <Link href="/work"><a><button className="button-primary">Work</button></a></Link>
+                <Link href="/about"><a><button className="button-primary">Profile</button></a></Link>
                 </div>
         </div>
     </Layout>

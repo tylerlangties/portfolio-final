@@ -1,36 +1,67 @@
 import React, { Component } from 'react';
 import Layout from '../components/layout';
-import MailIcon from '../static/mailing-icon.svg';
 import '../styles/work.scss';
 
-export default class Work extends Component {
-    render() {
-        return (
-
+const Work = () => (
     <Layout>
         <div className="work-page">
             <div className="page-wrapper">
             <h1>Work</h1> 
                 <div className="rich-text"> 
                 <div className="img-container">
-                            <img className="proj-1" src="../static/proj-imgone.jpeg" />
-                            <hr />
-                            <img className="proj-2" src="../static/proj-imgtwo.jpeg" />
-                            <hr />
-                            <img className="proj-3" src="../static/proj-imgthree.jpeg" />
-                            <hr />
-                            <img className="proj-4" src="../static/proj-imgfour.jpeg" />
-                            <hr />
+                    <div className="work-page__grid">
+                        <img className="work-page__grid--img" src="../static/movie-db.png" />
+                        <div className="work-page__grid--container">
+                            <h1>Flix Database</h1>
+                            <p>A simple movie detail library.</p>
+                            <div>
+                            <h3>Technologies:</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Styled Components</li>
+                                <li>Rest</li>
+                                <li>Overdrive</li>
+                            </ul>
+                            </div>
+                            <a href="https://github.com/tylerlangties/movie-db"><button className="button-primary">Codebase</button></a>
+                            <a href="https://ecstatic-ritchie-157e97.netlify.com/"><button className="button-primary">Website</button></a>
+                        </div>
                     </div>
-                    <a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!">
-                        <button className="button-primary">Get in touch</button>
-                    </a>
+
+                    <hr />
+
+                    <div className="work-page__grid">
+                        <img className="work-page__grid--img" src="../static/crypto-index.png" />
+                        <div className="work-page__grid--container">
+                            <h1>Crypto Index</h1>
+                            <p>An interactive chart which displays some of the most popular crypto currencies and their current values.</p>
+                            <div>
+                            <h3>Technologies:</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Chart.js</li>
+                                <li>Lodash</li>
+                                <li>Moment.js</li>
+                            </ul>
+                            </div>
+                            <a href="https://github.com/tylerlangties/crypto-index"><button className="button-primary">Codebase</button></a>
+                            <a href="https://dreamy-heyrovsky-fa9d75.netlify.com/"><button className="button-primary">Website</button></a>
+                        </div>
+                    </div>
+                    <hr />
+                    </div>
+
+                    <div className="work-page__button-container">
+                        <a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!">
+                            <button className="button-primary work-button">Get in touch</button>
+                        </a>
+                    </div>  
                 </div>
             </div>
         </div>
     </Layout>
+)
 
-        )
-    }
-}
+export default Work;
+    
     

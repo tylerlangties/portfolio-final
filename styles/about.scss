@@ -7,4 +7,26 @@
     padding: 100px 20px 0;
     background-color: #11082b;
     box-sizing: border-box;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+    a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1.5px;
+        left: 50%;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.84);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
 }
+

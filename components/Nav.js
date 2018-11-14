@@ -3,6 +3,7 @@ import HomeIcon from '../static/home-icon.svg';
 import ProfileIcon from '../static/profile-icon.svg';
 import WorkIcon from '../static/work-icon.svg';
 import MailIcon from '../static/mailing-icon.svg';
+import Link from 'next/link';
 import '../styles/menu-button.scss';
 import '../styles/nav.scss';
 
@@ -20,14 +21,16 @@ export default class Nav extends Component {
     render() {
         let buttonToggle = "";
         let navigation__list = "navigation__list"
+        let navigation__icon = "navigation__icon"
         if(this.state.navIsOpen) {
+            navigation__icon = "navigation__icon active"
             buttonToggle = "open"
             navigation__list = "navigation__list open"
         }
         return (
         <div className="nav-wrapper">
             <nav className="navigation">
-                <div className="navigation__icon">
+                <div className={navigation__icon}>
                     <div onClick={this.navToggleClickHandler} id="nav-icon" className={buttonToggle}>
                             <span></span>
                             <span></span>
@@ -35,10 +38,22 @@ export default class Nav extends Component {
                     </div>
                 </div>
                 <ul className={navigation__list}>
-                    <li className="navigation__list--item"><p>Home</p><a href="/"><HomeIcon /></a></li>
-                    <li className="navigation__list--item"><p>Profile</p><a href="/about"><ProfileIcon /></a></li>
-                    <li className="navigation__list--item"><p>Work</p><a href="/work"><WorkIcon /></a></li>
-                    <li className="navigation__list--item"><p>Connect</p><a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!"><MailIcon /></a></li>
+                    <li className="navigation__list--item"><p>Home</p>
+                    <Link href="/">
+                        <a><HomeIcon /></a>
+                    </Link></li>
+                    <li className="navigation__list--item"><p>Profile</p>
+                    <Link href="/about">
+                        <a><ProfileIcon /></a>
+                    </Link></li>
+                    <li className="navigation__list--item"><p>Work</p>
+                    <Link href="/work">
+                        <a><WorkIcon /></a>
+                    </Link></li>
+                    <li className="navigation__list--item"><p>Connect</p>
+                    <a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!">
+                        <MailIcon />
+                    </a></li>
                 </ul>
             </nav>
         </div>

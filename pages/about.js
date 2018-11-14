@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import '../styles/main.scss';
 import '../styles/about.scss';
 
-export default () => (
+const About = () => (
     <Layout>
         <div className="about-page">
             <div className="page-wrapper">
@@ -14,3 +14,5 @@ export default () => (
         </div>
     </Layout>
 )
+
+export default About;
