@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
 
 .nav-wrapper {
-    width: 98vw;
+    width: 99vw;
     height: 96px;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    
+    position: absolute;   
 }
 
 .navigation {
@@ -21,8 +20,8 @@
     position: fixed;
     color: white;
     &__icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,12 +53,12 @@
             flex-direction: row;
             transition: all ease 200ms;
             margin: 1rem 0;
-            width: 60px;
+            width: 50px;
             max-height: 20vh;
             p {
                 position: absolute;
                 opacity: 0;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 margin: 0;
                 padding: 0;
                 transform: translateX(-50px);
@@ -79,32 +78,38 @@
                     transition: all ease-in-out 250ms;
                     width: 60px;
                     cursor: default;
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
                 }
             }
         }
     }
-}
-
-.home-icon, .profile-icon, .work-icon, .mail-icon {
-    height: 30px;
-    width: 30px;
-    color: white;
-    transition: opacity ease-in-out 300ms;
-    &:hover {
-        opacity: 0.8;
-        cursor: pointer;
+    .home-icon, .profile-icon, .work-icon, .mail-icon {
+        height: 30px;
+        width: 30px;
+        color: white;
+        transition: opacity ease-in-out 300ms;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
-}
-
-.active {
-    background-color: rgba(9,3,23,0.98);
-}
-
-.open {
-    transform: translateY(0px);
-    opacity: 1;
-    .navigation__list--item {
+    .active {
+        background-color: rgba(9,3,23,0.98);
+    }
+    .open {
+        transform: translateY(0px);
         opacity: 1;
-        transition: opacity 350ms ease 350ms;
+        .navigation__list--item {
+            opacity: 1;
+            transition: opacity 350ms ease 350ms;
+        }
     }
 }
+
+
+
+
+
+

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -253,7 +253,7 @@ function (_Component) {
 
       if (this.state.navIsOpen) {
         navigation__icon = "navigation__icon active";
-        buttonToggle = "open";
+        buttonToggle = "hamburger-transition";
         navigation__list = "navigation__list open";
       }
 
@@ -278,41 +278,64 @@ function (_Component) {
           lineNumber: 33
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.navToggleClickHandler,
-        id: "nav-icon",
-        className: buttonToggle,
+        className: "menu-button",
+        id: "menu-button",
+        type: "button",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: buttonToggle,
+        id: "hamburger",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 34
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: navigation__list,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 36
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "navigation__list--item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeIcon, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "navigation__list--item",
         __source: {
           fileName: _jsxFileName,
@@ -325,8 +348,8 @@ function (_Component) {
           lineNumber: 41
         },
         __self: this
-      }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/",
+      }, "Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/about",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
@@ -338,7 +361,7 @@ function (_Component) {
           lineNumber: 43
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomeIcon, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileIcon, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
@@ -357,8 +380,8 @@ function (_Component) {
           lineNumber: 45
         },
         __self: this
-      }, "Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/about",
+      }, "Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/work",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
@@ -370,7 +393,7 @@ function (_Component) {
           lineNumber: 47
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileIcon, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WorkIcon, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 47
@@ -389,49 +412,17 @@ function (_Component) {
           lineNumber: 49
         },
         __self: this
-      }, "Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/work",
+      }, "Connect"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WorkIcon, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "navigation__list--item",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, "Connect"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MailIcon, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 51
         },
         __self: this
       }))))));
@@ -609,10 +600,20 @@ function (_Component) {
           lineNumber: 13
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "../static/favicon.svg",
+        sizes: "32x32",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
       }), this.props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -620,7 +621,7 @@ function (_Component) {
         params: _Particles_ParticlesOptions__WEBPACK_IMPORTED_MODULE_4__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         },
         __self: this
       }));
@@ -671,73 +672,87 @@ var Index = function Index() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
+    className: "page-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "landing-page__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, "Tyler Langties,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }), "Front-end / UI Developer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "landing-page__subtitle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
-  }, "Hi. I produce elegant, performant, and accessible digital experiences. Currently working as a freelancer, US."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Hi. I produce elegant, performant, and accessible digital experiences. Currently working as a freelancer, US."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "landing-page__button-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "button-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, "Work"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "button-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
-  }, "Profile"))))));
+  }, "Profile"))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -788,7 +803,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

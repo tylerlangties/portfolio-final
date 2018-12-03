@@ -15,8 +15,8 @@
             border: 0;
             width: 100%;
             margin: 2rem 0;
-            border-bottom: 1px dashed #ccc;
-            background: #999;
+            border-bottom: 1px dashed rgba(255, 255, 255, .25);
+            background: rgba(255, 255, 255, .25);
         }
     }
     &__grid {
@@ -65,9 +65,11 @@
     }
     }
     &__button-container {
+        display: flex;
+        justify-content: center;
         .button-primary {
                 margin: 2em 1em;
-                width: 8rem;
+                width: 10rem;
                 @media(max-width: 767px) {
                     width: 70vw;
                 }

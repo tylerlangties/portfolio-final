@@ -4,7 +4,7 @@
 html {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 112.5%;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
     }
     p {
         max-width: 750px;
-        font-weight: 100;
+        font-weight: 300;
         line-height: 34px;
         margin-top: 7px;
         font-size: 23px;
@@ -68,9 +68,10 @@ letter-spacing: 2px;
 padding: 1rem;
 margin-bottom: 1rem;
     &:hover {
+        @media(min-width: 767px) {
         background-color: #fff;
         color: rgba(9,3,23,0.98);
         cursor: pointer;
-        
+        }
 }
 }

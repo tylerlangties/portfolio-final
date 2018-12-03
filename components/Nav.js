@@ -24,18 +24,14 @@ export default class Nav extends Component {
         let navigation__icon = "navigation__icon"
         if(this.state.navIsOpen) {
             navigation__icon = "navigation__icon active"
-            buttonToggle = "open"
+            buttonToggle = "hamburger-transition"
             navigation__list = "navigation__list open"
         }
         return (
         <div className="nav-wrapper">
             <nav className="navigation">
                 <div className={navigation__icon}>
-                    <div onClick={this.navToggleClickHandler} id="nav-icon" className={buttonToggle}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                    </div>
+                    <button onClick={this.navToggleClickHandler} className="menu-button" id="menu-button" type="button"><span className={buttonToggle} id="hamburger"></span></button>
                 </div>
                 <ul className={navigation__list}>
                     <li className="navigation__list--item"><p>Home</p>
