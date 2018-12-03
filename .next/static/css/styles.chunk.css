@@ -227,76 +227,6 @@ body {
       color: rgba(9, 3, 23, 0.98);
       cursor: pointer; } }
 
-.work-page {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-height: 100vh;
-  z-index: 1;
-  padding: 100px 20px 0;
-  background-color: transparent;
-  box-sizing: border-box; }
-  .work-page .img-container {
-    display: flex;
-    margin-top: 6rem;
-    flex-direction: column; }
-    .work-page .img-container hr {
-      border: 0;
-      width: 100%;
-      margin: 2rem 0;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
-      background: rgba(255, 255, 255, 0.25); }
-  .work-page__grid {
-    display: flex;
-    align-items: center; }
-    @media (max-width: 767px) {
-      .work-page__grid {
-        flex-direction: column; } }
-    .work-page__grid--container {
-      text-align: center;
-      margin: 0 auto; }
-      .work-page__grid--container h3 {
-        display: inline-block;
-        margin: 2rem 0 0;
-        padding: 0; }
-      .work-page__grid--container p {
-        padding: 0;
-        margin: 0 auto; }
-      .work-page__grid--container ul {
-        margin: 0;
-        padding: 0;
-        display: inline-block; }
-        .work-page__grid--container ul li {
-          margin: .5rem;
-          display: inline-block;
-          color: rgba(255, 255, 255, 0.84); }
-      .work-page__grid--container .button-primary {
-        margin: 2em 1em;
-        width: 8rem; }
-    .work-page__grid--img {
-      object-fit: cover;
-      height: 300px;
-      width: 400px;
-      border: 1px solid black;
-      transition: transform ease 400ms;
-      border-radius: 5px; }
-      .work-page__grid--img:hover {
-        transform: scale(1.015) skew(0.75deg); }
-  .work-page__button-container {
-    display: flex;
-    justify-content: center; }
-    .work-page__button-container .button-primary {
-      margin: 2em 1em;
-      width: 10rem; }
-      @media (max-width: 767px) {
-        .work-page__button-container .button-primary {
-          width: 70vw; } }
-    @media (max-width: 767px) {
-      .work-page__button-container {
-        width: 100%;
-        display: flex;
-        justify-content: center; } }
-
 body {
   margin: 0; }
 
@@ -365,6 +295,35 @@ body {
     @media (min-width: 1350px) {
       .landing-page__button-container .button-primary {
         margin: 1rem 1.75rem; } }
+
+.about-page {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  padding: 100px 20px 0;
+  background-color: #11082b;
+  box-sizing: border-box; }
+  .about-page a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative; }
+  .about-page a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.84);
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0; }
+  @media (min-width: 767px) {
+    .about-page a:hover:after {
+      width: 100%;
+      left: 0; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

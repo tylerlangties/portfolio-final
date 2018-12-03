@@ -449,7 +449,7 @@ __webpack_require__.r(__webpack_exports__);
 var particlesOptions = {
   "particles": {
     "number": {
-      "value": 28,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -603,7 +603,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
-        href: "../static/favicon.svg",
+        href: "../static/favicon.ico",
         sizes: "32x32",
         __source: {
           fileName: _jsxFileName,

@@ -11,7 +11,7 @@ export default class Layout extends Component {
         <div className="layout">
         <Head>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="icon" type="image/png" href="../static/favicon.svg" sizes="32x32"></link>
+            <link rel="icon" type="image/png" href="../static/favicon.ico" sizes="32x32"></link>
         </Head>
             <Nav />  
             {this.props.children}
