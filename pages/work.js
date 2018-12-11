@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Link from 'next/link';
+import travel from '../static/travel-blog.png';
 import '../styles/work.scss';
 
 const Work = () => (
@@ -10,7 +12,7 @@ const Work = () => (
                 <div className="rich-text"> 
                 <div className="img-container">
                     <div className="work-page__grid">
-                        <img className="work-page__grid--img" src="../static/travel-blog.png" />
+                        <a href="https://elastic-mcnulty-ae86ca.netlify.com/"><img className="work-page__grid--img" src={travel} /></a>
                         <div className="work-page__grid--container">
                             <h1>Travel Blog Template</h1>
                             <p>A static blog template with a Contentful backend.</p>
@@ -30,7 +32,7 @@ const Work = () => (
                     <hr />
 
                     <div className="work-page__grid">
-                        <img className="work-page__grid--img" src="../static/movie-db.png" />
+                        <a href="https://ecstatic-ritchie-157e97.netlify.com/"><img className="work-page__grid--img" src="../static/movie-db.png" /></a>
                         <div className="work-page__grid--container">
                             <h1>Flix Database</h1>
                             <p>A simple movie detail library.</p>
@@ -51,7 +53,7 @@ const Work = () => (
                     <hr />
 
                     <div className="work-page__grid">
-                        <img className="work-page__grid--img" src="../static/portfolio.png" />
+                        <a href="https://langties.works/"><img className="work-page__grid--img" src="../static/portfolio.png" /></a>
                         <div className="work-page__grid--container">
                             <h1>A Portfolio</h1>
                             <p>My personal portfolio! Feel free to clone it and make it your own.</p>
@@ -65,13 +67,13 @@ const Work = () => (
                             </ul>
                             </div>
                             <a href="https://github.com/tylerlangties/portfolio-final"><button className="button-primary">Codebase</button></a>
-                            <a href="https://dreamy-heyrovsky-fa9d75.netlify.com/"><button className="button-primary">Website</button></a>
+                            <a href="https://langties.works/"><button className="button-primary">Website</button></a>
                         </div>
                     </div>
                     <hr />
 
                     <div className="work-page__grid">
-                        <img className="work-page__grid--img" src="../static/crypto-index.png" />
+                        <a href="https://dreamy-heyrovsky-fa9d75.netlify.com/"><img className="work-page__grid--img" src="../static/crypto-index.png" /></a>
                         <div className="work-page__grid--container">
                             <h1>Crypto Index</h1>
                             <p>An interactive chart which displays some of the most popular crypto currencies and their current values.</p>
