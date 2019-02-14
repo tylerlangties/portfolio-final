@@ -1,77 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
 
-
 html {
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 112.5%;
-    letter-spacing: 2px;
+  // font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 112.5%;
+  //   letter-spacing: 2px;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 .layout {
-    box-sizing: border-box;
-    background: rgba(17, 8, 43, 1);
-    margin: 0;
-    padding: 0;
-    min-height: 600px;
+  box-sizing: border-box;
+  background: rgba(17, 8, 43, 1);
+  margin: 0;
+  padding: 0;
+  min-height: 600px;
 }
 
 .particles {
-    position: fixed;
-    overflow: hidden;
-    background-color: #11082b;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+  position: fixed;
+  overflow: hidden;
+  background-color: #11082b;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .rich-text {
-    a {
-        text-decoration: none;
-        color: #efecc8;
-        font-weight: 400;
-    }
-    p {
-        max-width: 750px;
-        font-weight: 300;
-        line-height: 34px;
-        margin-top: 7px;
-        font-size: 23px;
-        color: rgba(255,255,255,0.84);
-    }
+  a {
+    text-decoration: none;
+    color: #efecc8;
+    font-weight: 400;
+  }
+  p {
+    max-width: 750px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-top: 7px;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.84);
+  }
 }
 
-
 .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .button-primary {
-background-color: transparent;
-color: #e6e4ec;
-overflow: visible;
-border: 1px solid rgba(238,232,255,0.57);
-transition: background-color 0.3s ease, color 0.3s ease;
-text-transform: uppercase;
-font-weight: 400;
-letter-spacing: 2px;
-padding: 1rem;
-margin-bottom: 1rem;
-    &:hover {
-        @media(min-width: 767px) {
-        background-color: #fff;
-        color: rgba(9,3,23,0.98);
-        cursor: pointer;
-        }
-}
+  background-color: transparent;
+  color: #e6e4ec;
+  overflow: visible;
+  border: 1px solid rgba(238, 232, 255, 0.57);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  &:hover {
+    @media (min-width: 767px) {
+      background-color: #fff;
+      color: rgba(9, 3, 23, 0.98);
+      cursor: pointer;
+    }
+  }
 }
