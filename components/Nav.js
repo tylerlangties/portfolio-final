@@ -10,7 +10,7 @@ import '../styles/nav.scss';
 export default class Nav extends Component {
   state = {
     navIsOpen: false,
-    width: 0
+    windowWidth: 0
   };
 
   componentDidMount() {
@@ -29,12 +29,11 @@ export default class Nav extends Component {
   };
 
   updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth });
-    console.log(this.state.width);
+    this.setState({ windowWidth: window.innerWidth });
   };
 
   render() {
-    const { width } = this.state;
+    const { windowWidth } = this.state;
     let buttonToggle = '';
     let navigation__list = 'navigation__list';
     let navigation__icon = 'navigation__icon';
@@ -43,7 +42,7 @@ export default class Nav extends Component {
       buttonToggle = 'hamburger-transition';
       navigation__list = 'navigation__list open';
     }
-    return width <= 767 ? (
+    return windowWidth <= 767 ? (
       <div className="nav-wrapper">
         <nav className="navigation">
           <div className={navigation__icon}>
@@ -52,6 +51,7 @@ export default class Nav extends Component {
               className="menu-button"
               id="menu-button"
               type="button"
+              name="navigation button"
             >
               <span className={buttonToggle} id="hamburger" />
             </button>
@@ -95,16 +95,25 @@ export default class Nav extends Component {
         <div className="navigation-full">
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <Link href="/about">Profile</Link>
+              <Link href="/about">
+                <a>Profile</a>
+              </Link>
             </li>
             <li>
-              <Link href="/work">Work</Link>
+              <Link href="/work">
+                <a>Work</a>
+              </Link>
             </li>
             <li>
-              <a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!">
+              <a
+                name="contact link"
+                href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!"
+              >
                 Connect
               </a>
             </li>

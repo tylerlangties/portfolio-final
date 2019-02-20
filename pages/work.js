@@ -26,15 +26,18 @@ const Work = () => (
                   <ul>
                     <li>React</li>
                     <li>Styled Components</li>
-                    <li>Rest</li>
                     <li>Redux</li>
                   </ul>
                 </div>
                 <a href="https://github.com/tylerlangties/movie-db">
-                  <button className="button-primary">Codebase</button>
+                  <button name="moviedb codebase" className="button-primary">
+                    Codebase
+                  </button>
                 </a>
                 <a href="https://ecstatic-ritchie-157e97.netlify.com/">
-                  <button className="button-primary">Website</button>
+                  <button name="moviedb website" className="button-primary">
+                    Website
+                  </button>
                 </a>
               </div>
             </div>
@@ -59,10 +62,14 @@ const Work = () => (
                   </ul>
                 </div>
                 <a href="https://github.com/tylerlangties/travel-blog">
-                  <button className="button-primary">Codebase</button>
+                  <button name="blog codebase" className="button-primary">
+                    Codebase
+                  </button>
                 </a>
                 <a href="https://elastic-mcnulty-ae86ca.netlify.com/">
-                  <button className="button-primary">Website</button>
+                  <button name="blog website" className="button-primary">
+                    Website
+                  </button>
                 </a>
               </div>
             </div>
@@ -92,10 +99,14 @@ const Work = () => (
                   </ul>
                 </div>
                 <a href="https://github.com/tylerlangties/portfolio-final">
-                  <button className="button-primary">Codebase</button>
+                  <button name="portfolio codebase" className="button-primary">
+                    Codebase
+                  </button>
                 </a>
                 <a href="https://langties.works/">
-                  <button className="button-primary">Website</button>
+                  <button name="portfolio site" className="button-primary">
+                    Website
+                  </button>
                 </a>
               </div>
             </div>
@@ -124,10 +135,14 @@ const Work = () => (
                   </ul>
                 </div>
                 <a href="https://github.com/tylerlangties/crypto-index">
-                  <button className="button-primary">Codebase</button>
+                  <button name="crypto codebase" className="button-primary">
+                    Codebase
+                  </button>
                 </a>
                 <a href="https://dreamy-heyrovsky-fa9d75.netlify.com/">
-                  <button className="button-primary">Website</button>
+                  <button name="crypto website" className="button-primary">
+                    Website
+                  </button>
                 </a>
               </div>
             </div>
@@ -136,7 +151,10 @@ const Work = () => (
 
           <div className="work-page__button-container">
             <a href="mailto:tylerlangties@gmail.com?Subject=Hello,%20Tyler!">
-              <button className="button-primary work-button">
+              <button
+                name="contact button"
+                className="button-primary work-button"
+              >
                 Get in touch
               </button>
             </a>

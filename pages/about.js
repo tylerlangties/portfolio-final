@@ -24,7 +24,7 @@ const About = () => (
           <p>
             {' '}
             Browse some of my{' '}
-            <Link href="/work">
+            <Link name="work-link" href="/work">
               <a>work</a>
             </Link>
             , or <a href="mailto:tylerlangties@gmail.com">get in touch</a>.{' '}
@@ -38,8 +38,10 @@ const About = () => (
             <a href="https://www.instagram.com/imniceirl/">Instagram</a>.{' '}
           </p>{' '}
           <br />{' '}
-          <Link href="/work">
-            <button className="button-primary">Explore my work</button>
+          <Link name="work-link" href="/work">
+            <button name="explore work" className="button-primary">
+              Explore my work
+            </button>
           </Link>{' '}
         </div>
       </div>
