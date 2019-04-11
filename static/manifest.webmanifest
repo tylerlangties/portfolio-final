@@ -1,0 +1,15 @@
+{
+  "name": "Tyler Langties Portfolio",
+  "short_name": "Personal Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11082b",
+  "theme_color": "#11082b",
+  "description": "A portfolio displaying misc projects and details about Tyler Langties",
+  "icons": [
+    {
+      "src": "/static/favicon.ico",
+      "sizes": "32x32"
+    }
+  ]
+}

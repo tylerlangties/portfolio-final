@@ -27,22 +27,20 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 11,
+      "id": 7,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 7,
+      "id": 9,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "../styles/nav.scss": [
+    },
     {
-      "id": "./styles/nav.scss",
-      "name": "./styles/nav.scss",
+      "id": 11,
+      "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -55,18 +53,34 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "../styles/work.scss": [
-    {
-      "id": "./styles/work.scss",
-      "name": "./styles/work.scss",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
   "../styles/index.scss": [
     {
       "id": "./styles/index.scss",
       "name": "./styles/index.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../styles/nav.scss": [
+    {
+      "id": "./styles/nav.scss",
+      "name": "./styles/nav.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../styles/about.scss": [
+    {
+      "id": "./styles/about.scss",
+      "name": "./styles/about.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../styles/work.scss": [
+    {
+      "id": "./styles/work.scss",
+      "name": "./styles/work.scss",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

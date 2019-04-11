@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/tylerlangties/projects/portfolio-final/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/tylerlangties/dev/react/portfolio-final/.next");
       return error;
     }
   };
@@ -17966,7 +17966,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/tylerlangties/projects/portfolio-final/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! /Users/tylerlangties/dev/react/portfolio-final/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
