@@ -60,6 +60,7 @@
       border: 1px solid black;
       transition: transform ease 400ms;
       border-radius: 5px;
+      animation: fadeIn 0.4s;
       &:hover {
         transform: scale(1.02);
       }
@@ -83,5 +84,14 @@
       display: flex;
       justify-content: center;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

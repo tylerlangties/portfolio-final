@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import ProgressiveImage from 'react-progressive-image'
 import GridLoader from '../static/grid-loader.svg'
+import '../styles/image.scss'
 
 const Image = ({ src, alt, className }) => (
   <ProgressiveImage
@@ -9,7 +10,9 @@ const Image = ({ src, alt, className }) => (
   >
     {(currentSrc, loading) =>
       loading ? (
-        <GridLoader />
+        <div className='gridloader-wrapper'>
+          <GridLoader />
+        </div>
       ) : (
         <Fragment>
           <img

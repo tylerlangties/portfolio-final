@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Link from 'next/link'
 import Image from '../components/Image'
 
 import '../styles/work.scss'

@@ -24,7 +24,7 @@ const About = () => (
           <p>
             {' '}
             Browse some of my{' '}
-            <Link name='work-link' href='/work'>
+            <Link href='/work'>
               <a>work</a>
             </Link>
             , or <a href='mailto:tylerlangties@gmail.com'>get in touch</a>.{' '}
@@ -37,7 +37,7 @@ const About = () => (
             <a href='http://codepen.io/tylerlangties/'>CodePen</a>
           </p>{' '}
           <br />{' '}
-          <Link name='work-link' href='/work'>
+          <Link href='/work'>
             <button name='explore work' className='button-primary'>
               Explore my work
             </button>

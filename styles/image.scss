@@ -1,0 +1,12 @@
+.gridloader-wrapper {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-image {
+  opacity: 0;
+  transition: 500ms ease;
+}
